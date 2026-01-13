@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Herendispuut Abraxas</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <!--Icoontje voor internetbalk-->
+    <!-- Favicon -->
+    <link href="assets/img/logo + favicon/ABRAXAS logo DEF (1).png" rel="icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <!-- Import external libraries Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css" integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ==" crossorigin="" />
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js" integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ==" crossorigin=""></script>
+
+    <!-- Import jQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top">
+        <div class="container d-flex align-items-center justify-content-between">
+
+            <!-- Verander img src naar favicon link -->
+            <a href="index.html" class="logo"><img src="assets/img/logo + favicon/ABRAXAS logo DEF (1).png" alt="" class="img-fluid"></a>
+
+            <!-- Verander text om de navigatie balk aan te passen -->
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li><a class="nav-link scrollto active" href="#hero">Homepagina</a></li>
+                    <li><a class="nav-link scrollto" href="#about">Over Abraxas</a></li>
+                    <li><a class="nav-link scrollto" href="#team">Leden der Abraxas</a></li>
+                    <li><a class="nav-link scrollto" href="#cta">Stamkroeg</a></li>
+                    <li><a class="nav-link scrollto" href="#portfolio">Fotogalerij</a></li>
+                </ul>
+            </nav>
+            <!-- .navbar -->
+
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- ======= Main buttons Section ======= -->
+    <!-- Titel van de hero, alleen text aanpassen -->
+    <section id="hero" class="d-flex align-items-center">
+        <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
+            <div class="row justify-content-center">
+                <div class="col-xl-7 col-lg-9 text-center">
+                    <!-- <h1>Herendispuut Abraxas</h1> -->
+
+                </div>
+                <!-- Intro foto -->
+                <div>
+                    <img src="assets/img/logo + favicon/ABRAXAS logo DEF (1).png" class="rounded mx-auto d-block" max width="30%" height="auto" </div>
+                </div>
+
+                <!-- De 4 boxen onder de titel in de hero (ri-stack line aanpassen met andere icon uit bootstrap icons css) -->
+                <div class="row icon-boxes">
+                    <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="icon-box">
+                            <div class="icon"><i class="ri-book-line"></i></div>
+                            <h4 class="title"><a href="#about">Over Abraxas</a></h4>
+                            <p class="description">Een kleine terugblik over de vorming van Abraxas</p>
+                        </div>
+                    </div>
+
+
+
+                    <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in" data-aos-delay="400">
+                        <div class="icon-box">
+                            <div class="icon"><i class="ri-command-line"></i></div>
+                            <h4 class="title"><a href="#team">Leden der Abraxas</a></h4>
+                            <p class="description">Hier zie je de zittend leden en reunisten der Herendispuut Abraxas</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="icon-box">
+                            <div class="icon"><i class="ri-home-line"></i></div>
+                            <h4 class="title"><a href="#cta">Stamkroeg Taveerne 't Pantoffeltje</a></h4>
+                            <p class="description">Een plek waar de heren van Abraxas wekelijks bij elkaar komen om gezellig te borrelen voordat we onze Sociëteit bestormen!</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in" data-aos-delay="500">
+                        <div class="icon-box">
+                            <div class="icon"><i class="ri-camera-line"></i></div>
+                            <h4 class="title"><a href="#portfolio">Fotogalerij</a></h4>
+                            <p class="description">Wat leuke kiekjes van de afgelopen maanden!</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+    </section>
+    <!-- Main buttons Hero -->
+
+    <main id="main">
+
+        <!-- ======= Inleiding Section ======= -->
+        <section id="about" class="about">
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+                <div class="section-title">
+                    <h2>Over Abraxas</h2>
+                    <!-- <p>Agchtergrond informatie over de Oder Delta </p> -->
+                </div>
+
+                <div class="row content">
+                    <div class="col-lg-6">
+                        <p>
+                            Herendispuut Abraxas is opgericht op 28 november 2023 in 's-Hertogenbosch. Met tien trotse leden is het jongste dispuut opgericht met het devies: "Infinitum intuere, mens nulla est" dat betekent: Blik op oneindig, verstand op nul dat praktisch neerkomt
+                            op een ongelimiteerde open denkwijze. Deze 10 heren vinden het ontzettend belangrijk om met iedereen binnen deze vereniging een feestje te bouwen om zo het meeste uit onze studententijd te halen. Zo uiten wij onze visie binnen
+                            k.s.v. Gremio Unio en in onze mooie stamkroeg 't Pantoffeltje. Minimaal iedere donderdag zijn wij te vinden in deze mooie stamkroeg, gelegen aan de korte putstraat. Ook wel beter bekend als de slof, waar wij na een lekker potje
+                            bier doorgaan naar de soos om daar weer een onvergetelijke avond mee te maken.
+
+                        </p>
+                        <!-- <ul>
+                            <li><i class="ri-check-double-line"></i>Toegankelijkheid van het gebied moet goed zijn. </li>
+                            <li><i class="ri-check-double-line"></i>Het toerisme binnen het gebied stimuleren.</li>
+                            <li><i class="ri-check-double-line"></i> Zo min mogelijk verstoring van habitats.</li>
+                            <li><i class="ri-check-double-line"></i>Moet rekening worden gehouden met andere belangen zoals landbouwsector, lokaal economische belangen, beleid, waterhuishouding en de belangen van de transport- en energiesector. </li>
+                        </ul> -->
+                    </div>
+                    <div class="col-lg-6 pt-4 pt-lg-0">
+                        <p>
+                            Daarnaast zetten wij graag in met enthousiasme voor de vereniging k.s.v. Gremio Unio! Zo nemen wij deel aan commissies en werkgroepen om het beste uit de vereniging te halen. Niet alleen met deelname aan commissies en werkgroepen, ook met tapavonden en
+                            activiteiten zetten wij in voor onvergetelijke herinneringen. Wij zijn gedreven om van herendispuut Abraxas een groot succes te maken en hopen om met veel heren een onvergetelijk studentenleven te beleven!
+
+
+                        </p>
+                        <p>
+
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!--       Infographic onder de inleiding kan weg maar foto aanpassen mogelijk  
+        <div class="col-lg-12">
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+                <img src="assets/img/wisent_2.0.jpg" style="border:0; width: 80%; height: 80%;" width="300" height="450" style="border:0;" class="img-rounded center-block">
+
+                <div class="section-title">
+                    <p>Figuur 1. Infographic over de eigenschappen van de Europese bizon</p>
+                </div>
+            </div>
+        </div> -->
+
+        <!-- End Inleiding Section -->
+
+        <!-- ======= Onze visie Section ======= -->
+        <section id="about-video" class="about-video">
+            <div class="container" data-aos="fade-up">
+
+                <div class="row">
+
+                    <div class="col-lg-6 align-left-center" data-aos="fade-right" data-aos-delay="100">
+                        <img src="assets\img\fotowebsite1.jpg" style="border:0; width: 95%; height: auto;" width="500" height="auto" style="border:0;">
+
+                        <div class="section-title">
+                            <p>ALV 28 november 2023</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 pt-3 pt-lg-0 content" data-aos="fade-left" data-aos-delay="100">
+
+
+                        <div class="section-title">
+                            <h2>Onze visie</h2>
+
+                        </div>
+                        <p>
+                            Onze lijfspreuk:'Infinitum intuere, Mens nulla est' (Blik op oneindig, verstand op nul) vloeit voort uit Abraxas. Deze lijfspreuk weerspiegelt onze visie, gekenmerkt door een open denkwijze, die mensen zichzelf laat zijn en hier niet over na hoeven te
+                            denken. De kleuren van Abraxas zijn paars en geel. De kleur paars staat voor vernieuwing, het mystieke en oneindige mogelijkheden. Geel staat voor de verbinding met de leden van k.s.v Gremio Unio.
+
+
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <!-- End onze visie Section -->
+
+        <!-- ======= Cijfers Section ======= -->
+        <section id="team" class="counts section-bg">
+            <div class="container">
+                <p></p>
+
+                <div class="row justify-content-end">
+
+                    <div class="col-lg-3 col-md-5 col-6 d-md-flex align-items-md-stretch">
+                        <div class="count-box">
+                            <span data-purecounter-start="0" data-purecounter-end="9" data-purecounter-duration="2" class="purecounter"></span>
+                            <p>Dispuutsleden</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-5 col-6 d-md-flex align-items-md-stretch">
+                        <div class="count-box">
+                            <span data-purecounter-start="0" data-purecounter-end="4" data-purecounter-duration="2" class="purecounter"></span>
+                            <p>Rëunisten</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-5 col-6 d-md-flex align-items-md-stretch">
+                        <div class="count-box">
+                            <span data-purecounter-start="0" data-purecounter-end="7" data-purecounter-duration="2" class="purecounter"></span>
+                            <p>Aspiranten</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-5 col-6 d-md-flex align-items-md-stretch">
+                        <div class="count-box">
+                            <span data-purecounter-start="0" data-purecounter-end="2023" data-purecounter-duration="1" class="purecounter"></span>
+                            <p>Since</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <!-- End Cijfers Section -->
+        <!-- ======= Belanghebbenden Section ======= -->
+        <section id="testimonials" class="testimonials">
+            <div class="container" data-aos="fade-up">
+
+                <div class="section-title">
+                    <h2>Dispuutsleden</h2>
+                    <p>Leden der Herendispuut Abraxas</p>
+                </div>
+
+                <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+                            <div class="testimonial-item">
+
+                                <img src="assets/img/clients/bernard_krachling.png" class="img-fluid">
+                                <h3>Koen Verhoeven</h3>
+                                <h4>Zittend Lid</h4>
+                            </div>
+                        </div>
+                        <!-- End belanghebbende item -->
+
+                        <div class="swiper-slide">
+                            <div class="testimonial-item">
+                                <p>
+                                    <i class="bx bxs-quote-alt-left quote-icon-left"></i> Als medewerker van de Duitse overheid wil ik een website met informatie over het gebied en de bizon, zodat er een duidelijk beeld kan worden gevormd voor alle belanghebbenden.
+                                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                                </p>
+                                <img src="assets/img/clients/Paul.jpg" class="testimonial-img">
+                                <h3>Floris Guepin</h3>
+                                <h4>Zittend lid</h4>
+                            </div>
+                        </div>
+                        <!-- End belanghebbende item -->
+
+                        <div class="swiper-slide">
+                            <div class="testimonial-item">
+                                <p>
+                                    <i class="bx bxs-quote-alt-left quote-icon-left"></i> Als Duitse boer wil ik een duidelijke website met een goed overzicht van de informatie, zodat het mij duidelijk wordt wat de voor- en nadelen zijn van het onderzoek
+                                    voor mij als boer.
+                                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                                </p>
+                                <div class="persona-image">
+                                    <img src="assets/img/clients/Boer.jpg" class="testimonial-img" alt="">
+                                    <h3>Gijs Janssen</h3>
+                                    <h4>Providence der Abraxas</h4>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- End belanghebbende item -->
+
+                        <div class="swiper-slide">
+                            <div class="testimonial-item">
+                                <p>
+                                    <i class="bx bxs-quote-alt-left quote-icon-left"></i> Als investeerder wil ik een duidelijk overzicht met eventueel plaatsgebonden mogelijkheden voor investeringen in het gebied, zodat ik een goed beeld heb van de mogelijkheden.
+                                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                                </p>
+                                <img src="assets/img/clients/Aleksander.jpg" class="testimonial-img" alt="">
+                                <h3>Sten Bouten</h3>
+                                <h4>Virtue der Abraxas</h4>
+                            </div>
+                        </div>
+                        <!-- End belanghebbende item -->
+
+                        <div class="swiper-slide">
+                            <div class="testimonial-item">
+                                <p>
+                                    <i class="bx bxs-quote-alt-left quote-icon-left"></i> Als medewerker bij een natuurorganisatie wil ik een duidelijke kaart of pagina met informatie en data over het natuurgebied en de veranderingen die hier plaats gaan
+                                    vinden.
+                                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                                </p>
+                                <img src="assets/img/clients/sofia.jpg" class="testimonial-img" alt="">
+                                <h3>Sven van den Heijkant</h3>
+                                <h4>Rëunist</h4>
+                            </div>
+                        </div>
+                        <!-- End belanghebbende item -->
+
+                        <div class="swiper-slide">
+                            <div class="testimonial-item">
+                                <!-- <p>
+                                    <i class="bx bxs-quote-alt-left quote-icon-left"></i> Als omwonende wil ik een gebruiksvriendelijke website met algemene informatie over het gebied en de soort, zodat ik op een makkelijke manier informatie kan krijgen
+                                    over het onderzoek.
+                                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                                </p> -->
+                                <img src="assets/img/clients/LENE.jpg" class="testimonial-img" alt="">
+                                <h3>Jorn Peelen</h3>
+                                <h4>Zittend lid
+
+                                </h4>
+                            </div>
+                        </div>
+                        <!-- End belanghebbende item -->
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <!-- End belanghebbenden Section -->
+
+        <!-- ======= Uitleg Section ======= -->
+        <div class="section-title ">
+            <h2>Stamkroeg</h2>
+            <p>Neem een kijkje bij onze mooie stamkroeg aan de Korteputstraat, Taveerne 't Pantoffeltje!</p>
+        </div>
+        <section id="cta" class="cta">
+
+            <div class=" text-center ">
+
+                <img src="assets/img/PANTOFFELTJE_logowit-1.png" max width="30%" height="auto" data-aos="zoom-in"></div>
+
+            <p style="width:50%" class="text-center">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fermentum posuere est rhoncus porta. Etiam nec tellus non turpis ultricies elementum at vitae risus. Donec tincidunt, tellus vitae ullamcorper mattis, arcu ligula varius ligula, in finibus mi
+                risus sed turpis. Integer convallis quis dolor et semper. Vestibulum faucibus ligula eu vestibulum facilisis. Cras nulla dui, maximus eu arcu quis, viverra porttitor leo. Duis eu purus lectus. Quisque elementum, quam sed faucibus blandit,
+                odio lectus facilisis tellus, non luctus enim nisi sit amet ex. Nulla laoreet vestibulum dolor, eu tincidunt dui efficitur eu. Ut ac augue sem. Donec vitae diam nisi. Cras tellus quam, scelerisque in velit ac, imperdiet faucibus nulla.
+                Praesent quis accumsan nibh. Mauris nulla urna, malesuada eu metus eget, scelerisque auctor sem. Aenean turpis justo, bibendum eget ante a, tempus volutpat tortor.
+            </p>
+            </div>
+            <div class=" text-center ">
+                <a class="cta-btn " href="https://pantoffeltje.nl/ ">Website 't Pantoffeltje</a>
+            </div>
+
+
+        </section>
+        <!-- End Uitleg Section -->
+
+        <!-- ======= Interactieve kaart Section ======= -->
+        <!-- <section id="services " class="services section-bg ">
+            <div class="container " data-aos="fade-up ">
+
+                <div class="section-title ">
+                    <h3>Interactieve kaart</h3>
+                </div>
+
+                <!-- kaart -->
+        <!-- <div id="map "></div>
+                <div class="container " id="kaart ">
+                    <img id="legenda " src="assets/img/legendas/beschikbaarheid.jpg " width="10% " id="kaart ">
+                    <img id="legenda2 " src="assets/img/legendas/deelgebieden.jpg " width="10% " id="map3 ">
+                    <img id="legenda3 " src="assets/img/legendas/industrie.jpg " width="10% " id="map4 ">
+                    <img id="legenda4 " src="assets/img/legendas/landbouw.jpg " width="10% " id="map5 ">
+                    <img id="legenda5 " src="assets/img/legendas/toerisme.jpg " width="10% "></div>
+                </div> -->
+        <!--/section> 
+        <!-- End interactieve kaart -->
+
+        <!-- ======= Advies Section ======= -->
+        <!-- <section id="cta2 " class="cta2 ">
+            <div class="container " data-aos="zoom-in ">
+                <div class="text-center " colums="2 ">
+
+                    <h3>Advies</h3>
+                    <p></p>
+
+                    <div class="row content ">
+                        <div class="col-lg-6 ">
+                            <p>In de laatste tien jaar zijn verschillende natuurorganisaties bezig geweest met het herintroduceren van de Wisent. De bizon is een iconisch dier wat interesse wekt bij mensen. Bovendien is de bizon is belangrijk voor het stimuleren
+                                van de biodiversiteit in ecosystemen. Ver ontwikkelde ecosystemen met hierin een nieuwe diersoort om te bezichtigen wekt interesse bij mensen, dit kan zorgen voor meer toeristen in de regio waar de bizon herintroduceert
+                                wordt. Daarnaast is de veilige afstand om een bizon te bekijken 50 m, op eigen initiatief kan dit gevaarlijk zijn. </p>
+
+                            <p>(RewildingEurope, 2020) (et.at, 2021) </p>
+
+
+                        </div>
+                        <div class="col-lg-6 pt-4 pt-lg-0 ">
+
+                            <p>Dit biedt de regio dus nog een inkomstenbron, namelijk safari’s voor de bizon. Meer toerisme in de Oder delta draagt bij aan de ontwikkeling van de regio. Zo zullen o.a. meer hotels en/of restaurants geopend worden om de bezoekers
+                                op te vangen.Er zijn investeringen nodig van overheden, beleidsmakers en/of organisaties zoals de Europese Unie (EU) om de herintroductie van de bizon te realiseren. De plek waar de bizon het herintroduceerd kan worden
+                                is te zien in Figuur 3. </p>
+                        </div>
+
+                        <div class="col-lg-12 align-self-baseline " data-aos="fade-right " data-aos-delay="100 ">
+                            <div class="text-center ">
+                                <img src="assets/img/Beste_gebied_herintroductie1.jpg " style="border:0; width: 70%; height: 70%; " width="500 " height="350 " style="border:0; ">
+                            </div>
+                            <div class="section-title ">
+                                <a>Figuur 3. Het meest geschikte gebied voor de Europese bizon</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+        </section> -->
+        <!-- End advies Section -->
+
+
+
+        <!-- ======= Team Section ======= -->
+        <!-- <section id="team " class="team section-bg ">
+            <div class="container " data-aos="fade-up ">
+
+                <div class="section-title ">
+                    <h2>Huidige Nous</h2>
+                </div>
+
+                <div class="row ">
+                    <div class="col-lg-1 ">
+                        &nbsp;
+                    </div> -->
+        <!-- col-lg-2 en col-md-6 aanpassen als er meer op een rij moeten -->
+
+
+        <!-- <div class="col-lg-3 col-md-4 d-flex align-items-lg-start " data-aos="fade-up " data-aos-delay="300 ">
+                        <div class="member ">
+                            <div class="member-img ">
+                                <img src="assets/img/team/sten.png " class="img-fluid " alt=" ">
+                                <div class="social ">
+                                    <a href="https://www.facebook.com/sten.bouten.12 "><i class="bi bi-facebook "></i></a>
+                                    <a href="https://www.instagram.com/sten_bouten/ "><i class="bi bi-instagram "></i></a>
+                                    <a href="https://www.linkedin.com/in/sten-bouten-33107a231/ "><i class="bi bi-linkedin "></i></a>
+                                </div>
+                            </div>
+                            <div class="member-info ">
+                                <h4>Sten Bouten</h4>
+                                <span>Graphic Designer en Engineer</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 d-flex align-items-lg-center " data-aos="fade-up " data-aos-delay="300 ">
+                        <div class="member ">
+                            <div class="member-img ">
+                                <img src="assets/img/team/stephan.png " class="img-fluid " alt=" ">
+                                <div class="social ">
+                                    <a href="https://www.facebook.com/stephan.beijer.54 "><i class="bi bi-facebook "></i></a>
+                                    <a href="https://www.instagram.com/stephan_zzz/ "><i class="bi bi-instagram "></i></a>
+                                    <a href="https://www.linkedin.com/in/stephan-beijer-a19960233/ "><i class="bi bi-linkedin "></i></a>
+                                </div>
+                            </div>
+                            <div class="member-info ">
+                                <h4>Daan Kolk</h4>
+                                <span>Principem</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 d-flex align-items-lg-end " data-aos="fade-up " data-aos-delay="400 ">
+                        <div class="member ">
+                            <div class="member-img ">
+                                <img src="assets/img/team/mathis.png " class="img-fluid " alt=" ">
+                                <div class="social ">
+                                    <a href="https://www.facebook.com/profile.php?id=100009645795498 "><i class="bi bi-facebook "></i></a>
+                                    <a href="https://www.instagram.com/mathis_vfr/ "><i class="bi bi-instagram "></i></a>
+                                    <a href="https://www.linkedin.com/in/mathisvandervoordt/ "><i class="bi bi-linkedin "></i></a>
+                                </div>
+                            </div>
+                            <div class="member-info ">
+                                <h4>Gijs Janssen</h4>
+                                <span>Providence der Abraxas</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-1 "></div>
+
+                </div>
+
+            </div>
+        </section> -->
+        <!-- End Team Section -->
+
+
+        <!-- ======= Contact Section ======= -->
+
+
+
+
+        <div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2473.482891594397!2d5.303207811634844!3d51.68760777173744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c6eef6f70f9887%3A0xad0665376200a7e!2s&#39;t%20Pantoffeltje!5e0!3m2!1snl!2snl!4v1702414392254!5m2!1snl!2snl"
+                width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <!-- <div class="row mt-5 ">
+
+            <div class="col-lg-4 ">
+                <div class="info ">
+                    <div class="address ">
+                        <i class="bi bi-geo-alt "></i>
+                        <h4>Stamkroeg:</h4>
+                        <p>Taveerne 't Pantoffeltje</p>
+                    </div>
+
+                    <div class="email ">
+                        <i class="bi bi-envelope "></i>
+                        <h4>Email:</h4>
+                        <p>Herendispuutabraxas@gmail.com</p>
+                    </div>
+
+                    <div class="phone ">
+                        <i class="bi bi-phone "></i>
+                        <h4>Tel:</h4>
+                        <p></p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-8 mt-5 mt-lg-0 ">
+
+                <form action="forms/contact.php " method="post " role="form " class="php-email-form ">
+                    <div class="row ">
+                        <div class="col-md-6 form-group ">
+                            <input type="text " name="name " class="form-control " id="name " placeholder="Naam " required>
+                        </div>
+                        <div class="col-md-6 form-group ">
+                            <input type="email " class="form-control " name="email " id="email " placeholder="Email " required>
+                        </div>
+                    </div>
+                    <div class="form-group mt-3 ">
+                        <input type="text " class="form-control " name="subject " id="subject " placeholder="Onderwerp " required>
+                    </div>
+                    <div class="form-group mt-3 ">
+                        <textarea class="form-control " name="message " rows="5 " placeholder="Bericht " required></textarea>
+                    </div>
+                    <div class="my-3 ">
+                        <div class="loading ">Versturen...</div>
+                        <div class="error-message "></div>
+                        <div class="sent-message ">Je bericht is verzonden. Dankjewel!</div>
+                    </div>
+                    <div class="text-center "><button type="submit ">Bericht versturen</button></div>
+                </form>
+
+            </div>
+
+        </div>
+
+        </div> -->
+        </section>
+        <!-- End Contact Section -->
+        <!-- ======= Fotogalerij Section ======= -->
+        <section id="portfolio" class="portfolio">
+            <div class="container " data-aos="fade-up ">
+
+                <div class="section-title ">
+                    <h2>Fotogalerij</h2>
+                    <p>Foto's van Herendispuut Abraxas</p>
+                </div>
+
+                <div class="row " data-aos="fade-up " data-aos-delay="150 ">
+                    <div class="col-lg-12 d-flex justify-content-center ">
+                        <ul id="portfolio-flters ">
+                            <!-- <li data-filter="* " class="filter-active ">Foto's van Herendispuut Abraxas</li> -->
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="row portfolio-container " data-aos="fade-up " data-aos-delay="300 ">
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-app ">
+                        <div class="portfolio-wrap ">
+                            <img src="assets/img/f912b1f6-7587-429b-b5a4-032fc637c068.jpg" class="img-fluid " alt=" ">
+                            <div class="portfolio-info ">
+                                <h4>SLOK</h4>
+                                <p>2023</p>
+                                <div class="portfolio-links ">
+                                    <a href="assets/img/f912b1f6-7587-429b-b5a4-032fc637c068.jpg" data-gallery="portfolioGallery " class="portfolio-lightbox " title="SLOK 2023"><i class="bx bx-plus "></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-web ">
+                        <div class="portfolio-wrap ">
+                            <img src="assets/img/d84482b0-7748-4f56-af3e-18032ce4e557.jpg" class="img-fluid " alt=" ">
+                            <div class="portfolio-info ">
+                                <h4>Dispuutsweekend Friesland</h4>
+                                <p>2023</p>
+                                <div class="portfolio-links ">
+                                    <a href="assets/img/d84482b0-7748-4f56-af3e-18032ce4e557.jpg" data-gallery="portfolioGallery " class="portfolio-lightbox " title="Dispuutsweekend "><i class="bx bx-plus "></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-app ">
+                        <div class="portfolio-wrap ">
+                            <img src="assets/img/Stamkroeg.jpeg " class="img-fluid " alt=" ">
+                            <div class="portfolio-info ">
+                                <h4>Stamkroeg</h4>
+                                <p>Taveerne 't Pantoffeltje</p>
+                                <div class="portfolio-links ">
+                                    <a href="assets/img/Stamkroeg.jpeg " data-gallery="portfolioGallery " class="portfolio-lightbox " title="Taveerne 't Pantoffeltje "><i class="bx bx-plus "></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-card ">
+                        <div class="portfolio-wrap ">
+                            <img src="assets/img/1e5f9272-9463-436d-8ff0-6c5697af0c42.jpg " class="img-fluid " alt=" ">
+                            <div class="portfolio-info ">
+                                <h4>Op bezoek bij Herendispuut Brack</h4>
+                                <p>2023</p>
+                                <div class="portfolio-links ">
+                                    <a href="assets/img/1e5f9272-9463-436d-8ff0-6c5697af0c42.jpg  " data-gallery="portfolioGallery " class="portfolio-lightbox " title="Abraxas in de Saeck "><i class="bx bx-plus "></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-web ">
+                        <div class="portfolio-wrap ">
+                            <img src="assets/img/a0b5cd2d-52f5-48dc-9445-04e0f01f4579.jpg " class="img-fluid " alt=" ">
+                            <div class="portfolio-info ">
+                                <h4>Dies Natalis gala</h4>
+                                <p>2023</p>
+                                <div class="portfolio-links ">
+                                    <a href="assets/img/a0b5cd2d-52f5-48dc-9445-04e0f01f4579.jpg  " data-gallery="portfolioGallery " class="portfolio-lightbox " title="DNC 2023 "><i class="bx bx-plus "></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-app ">
+                        <div class="portfolio-wrap ">
+                            <img src="assets/img/_DSC0255.jpg " class="img-fluid " alt=" ">
+                            <div class="portfolio-info ">
+                                <h4>Herendispuut Abraxas is officieel!</h4>
+                                <p>ALV 28 November</p>
+                                <div class="portfolio-links ">
+                                    <a href="assets/img/_DSC0255.jpg" data-gallery="portfolioGallery " class="portfolio-lightbox " title="ALV 28 November "><i class="bx bx-plus "></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-app ">
+                        <div class="portfolio-wrap ">
+                            <img src="assets/img/_DSC0068.jpg " class="img-fluid " alt=" ">
+                            <div class="portfolio-info ">
+                                <h4> Bier!</h4>
+
+                                <div class="portfolio-links ">
+                                    <a href="assets/img/_DSC0068.jpg " data-gallery="portfolioGallery " class="portfolio-lightbox " title="Europese bizon in het wild "><i class="bx bx-plus "></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-card ">
+                        <div class="portfolio-wrap ">
+                            <img src="assets/img/logo + favicon/ABRAXAS logo DEF (1).png" class="img-fluid " alt=" ">
+                            <div class="portfolio-info ">
+                                <h4>Wapen der Herendispuut Abraxas</h4>
+
+                                <div class="portfolio-links ">
+                                    <a href="assets/img/logo + favicon/ABRAXAS logo DEF (1).png " data-gallery="portfolioGallery " class="portfolio-lightbox " title="Wapen der Abraxas"><i class="bx bx-plus "></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-card ">
+                        <div class="portfolio-wrap ">
+                            <img src="assets/img/_DSC0277.jpg " class="img-fluid " alt=" ">
+                            <div class="portfolio-info ">
+                                <h4>Abraxas en HB 23/24</h4>
+                                <p>AlV 28 November</p>
+                                <div class="portfolio-links ">
+                                    <a href="assets/img/_DSC0277.jpg " data-gallery="portfolioGallery " class="portfolio-lightbox " title="ALV 28 November "><i class="bx bx-plus "></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-card ">
+                        <div class="portfolio-wrap ">
+                            <img src="assets/img/b973f2ff-51b7-4dd5-a701-12d715a4a3ce.jpg " class="img-fluid
+                                " alt=" ">
+                            <div class="portfolio-info ">
+                                <h4>Borrel met Vertu Feminine</h4>
+                                <p>6 Maart 2024</p>
+                                <div class="portfolio-links ">
+                                    <a href="assets/img/b973f2ff-51b7-4dd5-a701-12d715a4a3ce.jpg " data-gallery="portfolioGallery
+                                " class="portfolio-lightbox " title="Borrel bij Vertu Feminine "><i class="bx bx-plus "></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-web ">
+                        <div class="portfolio-wrap ">
+                            <img src="assets/img/2023-11-10 00.38.26.jpg " class="img-fluid " alt=" ">
+                            <div class="portfolio-info ">
+                                <h4>Carnaval</h4>
+                                <p>2024</p>
+                                <div class="portfolio-links ">
+                                    <a href="assets/img/2023-11-10 00.38.26.jpg " data-gallery="portfolioGallery " class="portfolio-lightbox " title="Carnaval 2024 "><i class="bx bx-plus "></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <!-- End Fotogalerij Section -->
+    </main>
+    <!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer ">
+
+        <div class="footer-top ">
+            <div class="container ">
+                <div class="row ">
+
+                    <div class="col-lg-3 col-md-6 footer-contact ">
+                        <h3>Herendispuutabraxas@gmail.com</h3>
+                        <p>
+                            Onderwijsboulevard 221<br> 5223 DE 's-Hertogenbosch<br> Nederland<br><br>
+                            <strong>Telefoon:</strong> +31 08 88 90 36 00<br>
+                            <strong>Email:</strong>herendispuutabraxas@gmail.com<br>
+                        </p>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <div class="container d-md-flex py-4 ">
+
+            <div class="me-md-auto text-center text-md-start ">
+                <div class="copyright ">
+                    &copy; Copyright <strong><span>Has Hogeschool</span></strong>. Alle rechten voorbehouden
+                </div>
+                <div class="credits ">
+                    Ontworpen door <a href="https://has.nl/ ">Has Hogeschool</a>
+                </div>
+            </div>
+            <div class="social-links text-center text-md-right pt-3 pt-md-0 ">
+                <a href="https://www.facebook.com/hashogeschool " class="facebook "><i class="bx bxl-facebook "></i></a>
+                <a href="https://www.instagram.com/agis_has/ " class="instagram "><i class="bx bxl-instagram "></i></a>
+                <a href="https://www.linkedin.com/school/hashogeschool/ " class="linkedin "><i class="bx bxl-linkedin "></i></a>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <div id="preloader "></div>
+    <a href="# " class="back-to-top d-flex align-items-center justify-content-center "><i class="bi bi-arrow-up-short "></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/purecounter/purecounter.js "></script>
+    <script src="assets/vendor/aos/aos.js "></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js "></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js "></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js "></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js "></script>
+    <script src="assets/vendor/php-email-form/validate.js "></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js "></script>
+
+</body>
+
+</html>
